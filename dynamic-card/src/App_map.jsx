@@ -48,10 +48,10 @@ const App = () => (
 const Book = ({ title, author, description, coverUrl }) => (
   <div
     style={{
-      border: "1px solid black",
-      width: 150,
-      margin: 5,
-      overflowWrap: "anywhere",
+      width: 200,
+      margin: 10,
+      padding: 10,
+      borderRadius: 5,
     }}
   >
     <img alt={title} src={coverUrl} />

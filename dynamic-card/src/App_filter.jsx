@@ -21,7 +21,7 @@ const BOOKS = [
     title: "1984",
     author: "George Orwell",
     description: "A dystopian social science fiction novel set in a future where a totalitarian regime monitors every action.",
-    isActive: true,
+    isActive: false,
     coverUrl: "https://images-na.ssl-images-amazon.com/images/I/61vwzVXaA7L.jpg",
   },
   {
