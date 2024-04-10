@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 //import App from './App_reduce.jsx'
-//import App from './App_filter.jsx'
+import App from './App_filter.jsx'
 //import App from './App_map.jsx'
 import './index.css'
 

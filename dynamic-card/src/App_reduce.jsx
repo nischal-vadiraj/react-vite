@@ -47,9 +47,17 @@ const App = () => (
 );
 
 const Book = ({ title, author, description, coverUrl }) => (
-  <div className="book">
-    <img className="cover" src={coverUrl} alt={title} />
-    <div className="info">
+  <div
+    style={{
+      border: "1px solid black",
+      width: 200,
+      margin: 10,
+      padding: 10,
+      borderRadius: 5,
+    }}
+  >
+    <img alt={title} src={coverUrl} style={{ width: "100%" }} />
+    <div style={{ marginTop: 10 }}>
       <h3>{title}</h3>
       <p><strong>Author:</strong> {author}</p>
       <p>{description}</p>

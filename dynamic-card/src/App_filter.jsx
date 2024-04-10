@@ -21,7 +21,7 @@ const BOOKS = [
     title: "1984",
     author: "George Orwell",
     description: "A dystopian social science fiction novel set in a future where a totalitarian regime monitors every action.",
-    isActive: false,
+    isActive: true,
     coverUrl: "https://images-na.ssl-images-amazon.com/images/I/61vwzVXaA7L.jpg",
   },
   {
@@ -35,7 +35,7 @@ const BOOKS = [
     title: "The Catcher in the Rye",
     author: "J.D. Salinger",
     description: "A novel narrated by a teenager who has been expelled from prep school and wanders around New York City.",
-    isActive: false,
+    isActive: true,
     coverUrl: "https://images-na.ssl-images-amazon.com/images/I/71IF6-o4jwL.jpg",
   },
 ];

@@ -48,16 +48,17 @@ const App = () => (
 const Book = ({ title, author, description, coverUrl }) => (
   <div
     style={{
+      border: "1px solid black",
       width: 200,
       margin: 10,
       padding: 10,
       borderRadius: 5,
     }}
   >
-    <img alt={title} src={coverUrl} />
-    <div style={{ padding: 5 }}>
-      <strong>{title}</strong>
-      <p><em>by {author}</em></p>
+    <img alt={title} src={coverUrl} style={{ width: "100%" }} />
+    <div style={{ marginTop: 10 }}>
+      <h3>{title}</h3>
+      <p><strong>Author:</strong> {author}</p>
       <p>{description}</p>
     </div>
   </div>
