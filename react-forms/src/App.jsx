@@ -4,10 +4,10 @@ import './App.css';
 const formReducer = (state, event) => {
   if(event.reset) {
     return {
-      apple: '',
+      clouds: '',
       count: 0,
       name: '',
-      'gift-wrap': false,
+      'user': false,
     }
   }
  
@@ -45,10 +45,10 @@ function App() {
 
   return(
     <div className="wrapper">
-      <h1>How About Them Apples</h1>
+      <h1>how is the form</h1>
       {submitting &&
         <div>
-          You are submitting the following:
+          submitting the following now:
           <ul>
             {Object.entries(formData).map(([name, value]) => (
               <li key={name}><strong>{name}</strong>: {value.toString()}</li>
@@ -65,12 +65,12 @@ function App() {
         </fieldset>
         <fieldset disabled={submitting}>
           <label>
-            <p>Apples</p>
-            <select name="apple" onChange={handleChange} value={formData.apple || ''}>
+            <p>Clouds</p>
+            <select name="apple" onChange={handleChange} value={formData.clouds || ''}>
                 <option value="">--Please choose an option--</option>
-                <option value="fuji">Fuji</option>
-                <option value="jonathan">Jonathan</option>
-                <option value="honey-crisp">Honey Crisp</option>
+                <option value="aws">AWS</option>
+                <option value="gcp">google cloud platform</option>
+                <option value="azure">Azure</option>
             </select>
           </label>
           <label>
@@ -78,12 +78,12 @@ function App() {
             <input type="number" name="count" onChange={handleChange} step="1" value={formData.count || ''}/>
           </label>
           <label>
-            <p>Gift Wrap</p>
-            <input type="checkbox" name="gift-wrap" onChange={handleChange} checked={formData['gift-wrap'] || false}/>
+            <p>User checkbox</p>
+            <input type="checkbox" name="user" onChange={handleChange} checked={formData['user'] || false}/>
           </label>
         </fieldset>
         <button type="submit" disabled={submitting}>Submit</button>
-      </form>disabled={submitting}
+      </form>
     </div>
   )
 }
