@@ -57,13 +57,13 @@ function App() {
         </div>
       }
       <form onSubmit={handleSubmit}>
-        <fieldset>
+        <fieldset disabled={submitting}>
           <label>
             <p>Name</p>
             <input name="name" onChange={handleChange} value={formData.name || ''}/>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset disabled={submitting}>
           <label>
             <p>Apples</p>
             <select name="apple" onChange={handleChange} value={formData.apple || ''}>
@@ -82,8 +82,8 @@ function App() {
             <input type="checkbox" name="gift-wrap" onChange={handleChange} checked={formData['gift-wrap'] || false}/>
           </label>
         </fieldset>
-        <button type="submit">Submit</button>
-      </form>
+        <button type="submit" disabled={submitting}>Submit</button>
+      </form>disabled={submitting}
     </div>
   )
 }
